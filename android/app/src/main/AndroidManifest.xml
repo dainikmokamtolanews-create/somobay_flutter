@@ -1,0 +1,13 @@
+<manifest package="com.example.somobay_flutter">
+    <application
+        android:label="সমবায় সমিতি"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
