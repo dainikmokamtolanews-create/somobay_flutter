@@ -9,8 +9,10 @@ workflows:
         script: flutter clean
       - name: Install Dependencies
         script: flutter pub get
-      - name: Create Android Files
-        script: flutter create .
+      - name: Force Create Android
+        script: |
+          rm -rf android
+          flutter create --platforms=android .
       - name: Build APK
         script: flutter build apk --release
     artifacts:
