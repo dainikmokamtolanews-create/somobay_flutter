@@ -1,23 +1,17 @@
-name: somobay_flutter
-description: Offline cooperative society management app for members, installments, and reports.
-publish_to: "none"
+name: somobay_app
+description: সমবায় সমিতি ম্যানেজমেন্ট অ্যাপ
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=3.3.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
-  sqflite: ^2.3.3+1
-  path: ^1.9.0
-  intl: ^0.19.0
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^3.0.2
+  intl: ^0.18.1
+  sqflite: ^2.3.0
+  path: ^1.8.3
 
 flutter:
   uses-material-design: true
