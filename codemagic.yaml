@@ -2,12 +2,15 @@ workflows:
   android-release:
     name: Android APK Build
     instance_type: mac_mini_m1
-    max_build_duration: 120
     environment:
       flutter: stable
     scripts:
+      - name: Clean
+        script: flutter clean
       - name: Install Dependencies
         script: flutter pub get
+      - name: Create Android Files
+        script: flutter create .
       - name: Build APK
         script: flutter build apk --release
     artifacts:
