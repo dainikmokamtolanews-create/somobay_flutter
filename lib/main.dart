@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import 'database.dart';
+import 'database/database_helper.dart';
 
 const purple = Color(0xFF7257C7);
 const purpleDark = Color(0xFF35245D);
